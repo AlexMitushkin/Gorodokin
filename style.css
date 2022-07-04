@@ -21,6 +21,7 @@ p {
 }
 
 /* Header */
+
 header {
   background: #0e402d;
   color: #fff;
@@ -215,21 +216,186 @@ main {
 .content__disease:last-child::before {
   display: none;
 }
+
 .content__disease__about ul {
   margin-top: 47px;
-  margin-right: 85px;
+  margin-right: 70px;
   position: relative;
 }
 .content__disease__about ul li {
   color: #fff;
   font-weight: 400;
   margin-bottom: 12px;
-  width: 260px;
-  list-style-type: circle;
+  list-style-type: disc;
+  width: 242px;
+  color: #ff8427;
 }
-.content__disease__about ul li::marker {
-  width: 8px;
-  height: 8px;
-  background: #FF8427;
+.content__disease__about ul li span {
+  color: #fff;
 }
 
+/* slider */
+
+.slider {
+  height: 894px;
+}
+.slider .container {
+  display: block;
+  margin-top: 84px;
+}
+.slider h3 {
+  color: #1a181b;
+  font-family: "Tenor Sans";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  margin-top: 120px;
+}
+.slider__fst,
+.slider__scnd,
+.slider__thrd {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #0e402d;
+  border-radius: 50%;
+}
+.slider__fst span,
+.slider__scnd span,
+.slider__thrd span {
+  position: absolute;
+  font-family: "Tenor Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1a181b;
+  top: -4px;
+  left: 17px;
+}
+.slider__fst,
+.slider__scnd {
+  margin-bottom: 255px;
+}
+.slider__fst::after,
+.slider__scnd::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 5px;
+  height: 255px;
+  width: 1px;
+  background: #1d7874;
+  opacity: 0.3;
+}
+.slider .active {
+  background: #ff8427;
+  border: 1px solid #ff8427;
+}
+
+/* .slider .items {
+  display: flex;
+  width: 1233px;
+} */
+/* .slider .items p {
+  color: #000;
+} */
+/* .slider .items .slider__items__box {
+  width: 322px;
+}
+
+
+/* slider__reviews */
+
+.slider__reviews {
+  height: 789px;
+  background: #0e402d;
+}
+.slider__reviews .container {
+  display: block;
+}
+.slider__reviews__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+.slider__reviews__header h3 {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #ff8427;
+}
+.slider__reviwes__btn {
+  width: 258px;
+  height: 52px;
+  border: 1px solid #fff;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__reviwes__btn a {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 19px;
+  color: #fff;
+}
+.slider__reviews p {
+  width: 404px;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 59px;
+}
+.slider__reviews__main {
+  height: 295px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left__btn,
+.right__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-top: 104px;
+}
+.left__btn {
+  margin-left: 60px;
+}
+.left__btn a {
+  background: url(./img/icons/left.png);
+}
+.right__btn {
+  margin-right: 60px;
+}
+.slider__img {
+  display: flex;
+}
+.slider__photo {
+  width: 230px;
+  height: 215px;
+  margin-right: 42px;
+  background-image: url(./img/ПЕРСОНА-Ж\1png);
+}
+.slider__info,
+.slider__info p {
+  width: 515px;
+}
+.slider__info h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+}
+.slider__info h5 {
+  font-family: "Tenor Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 18px;
+}
